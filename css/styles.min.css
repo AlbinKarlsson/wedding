@@ -20,3 +20,37 @@ transition:all 300ms ease-in-out;position:fixed;width:100%;z-index:999}.fixed{po
     background-color: rgb(176, 127, 139);
     color: #fff;
 }
+
+/* Existing styles... */
+
+/* Hide the checkbox inputs */
+#stay-nights-options input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the labels as buttons */
+.stay-night-option {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 10px 5px 0;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: background-color 0.2s, color 0.2s;
+    user-select: none;
+}
+
+/* Change appearance when checkbox is checked */
+#stay-nights-options input[type="checkbox"]:checked + .stay-night-option {
+    background-color: rgb(176, 127, 139);
+    color: #fff;
+    border-color: rgb(176, 127, 139);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Add hover effect */
+.stay-night-option:hover {
+    background-color: #e0e0e0;
+}
